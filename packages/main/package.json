@@ -1,0 +1,53 @@
+{
+	"name": "lux-pack",
+	"displayName": "Lux Extension Pack",
+	"description": "An extension pack",
+	"version": "0.1.0",
+	"galleryBanner": {
+		"color": "#FFCF02",
+		"theme": "light"
+	},
+	"publisher": "clazex",
+	"license": "Apache-2.0",
+	"categories": [
+		"Extension Packs"
+	],
+	"preview": true,
+	"qna": false,
+	"extensionDependencies": [
+		"clazex.lux-pack-basic"
+	],
+	"private": true,
+	"scripts": {
+		"build": "npm run clean && npm run package",
+		"clean": "node scripts/clean",
+		"package": "node scripts/package",
+		"publish": "vsce publish"
+	},
+	"homepage": "https://github.com/Clazex/vsce-lux-pack/tree/main/packages/main#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Clazex/vsce-lux-pack.git",
+		"directory": "packages/main"
+	},
+	"bugs": {
+		"url": "https://github.com/Clazex/vsce-lux-pack/issues"
+	},
+	"engines": {
+		"node": "^12.9.0 || >=14",
+		"vscode": "^1.52.0"
+	},
+	"extensionPack": [
+		"alefragnani.bookmarks",
+		"donjayamanne.githistory",
+		"eamodio.gitlens",
+		"github.vscode-pull-request-github",
+		"gruntfuggly.todo-tree",
+		"mikestead.dotenv",
+		"redvanworkshop.explorer-exclude-vscode-extension",
+		"xyz.local-history"
+	],
+	"devDependencies": {
+		"v8-compile-cache": "^2.2.0"
+	}
+}
