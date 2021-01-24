@@ -1,0 +1,61 @@
+{
+	"name": "lux-pack-basic",
+	"displayName": "Lux Basic Extension Pack",
+	"description": "An extension pack",
+	"version": "0.1.0",
+	"galleryBanner": {
+		"color": "#FFCF02",
+		"theme": "light"
+	},
+	"publisher": "clazex",
+	"license": "Apache-2.0",
+	"categories": [
+		"Extension Packs"
+	],
+	"preview": true,
+	"qna": false,
+	"private": true,
+	"scripts": {
+		"build": "npm run clean && npm run package",
+		"clean": "node scripts/clean",
+		"package": "node scripts/package",
+		"publish": "vsce publish"
+	},
+	"homepage": "https://github.com/Clazex/vsce-lux-pack/tree/main/packages/basic#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Clazex/vsce-lux-pack.git",
+		"directory": "packages/basic"
+	},
+	"bugs": {
+		"url": "https://github.com/Clazex/vsce-lux-pack/issues"
+	},
+	"engines": {
+		"node": "^12.9.0 || >=14",
+		"vscode": "^1.52.0"
+	},
+	"extensionPack": [
+		"aaron-bond.better-comments",
+		"adpyke.codesnap",
+		"alefragnani.project-manager",
+		"coenraads.bracket-pair-colorizer-2",
+		"davidanson.vscode-markdownlint",
+		"editorconfig.editorconfig",
+		"formulahendry.code-runner",
+		"hideoo.toggler",
+		"lacroixdavid1.vscode-format-context-menu",
+		"mkxml.vscode-filesize",
+		"nhoizey.gremlins",
+		"redhat.vscode-xml",
+		"redhat.vscode-yaml",
+		"shan.code-settings-sync",
+		"stkb.rewrap",
+		"streetsidesoftware.code-spell-checker",
+		"tombonnike.vscode-status-bar-format-toggle",
+		"visualstudioexptteam.vscodeintellicode",
+		"yzhang.markdown-all-in-one"
+	],
+	"devDependencies": {
+		"v8-compile-cache": "^2.2.0"
+	}
+}
