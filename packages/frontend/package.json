@@ -1,0 +1,60 @@
+{
+	"name": "lux-pack-frontend",
+	"displayName": "Lux Frontend Extension Pack",
+	"description": "An extension pack",
+	"version": "0.1.0",
+	"galleryBanner": {
+		"color": "#FFCF02",
+		"theme": "light"
+	},
+	"publisher": "clazex",
+	"license": "Apache-2.0",
+	"categories": [
+		"Extension Packs"
+	],
+	"preview": true,
+	"qna": false,
+	"extensionDependencies": [
+		"clazex.lux-pack"
+	],
+	"private": true,
+	"scripts": {
+		"build": "npm run clean && npm run package",
+		"clean": "node scripts/clean",
+		"package": "node scripts/package",
+		"publish": "vsce publish"
+	},
+	"homepage": "https://github.com/Clazex/vsce-lux-pack/tree/main/packages/frontend#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Clazex/vsce-lux-pack.git",
+		"directory": "packages/frontend"
+	},
+	"bugs": {
+		"url": "https://github.com/Clazex/vsce-lux-pack/issues"
+	},
+	"engines": {
+		"node": "^12.9.0 || >=14",
+		"vscode": "^1.52.0"
+	},
+	"extensionPack": [
+		"dbaeumer.vscode-eslint",
+		"ecmel.vscode-html-css",
+		"eg2.vscode-npm-script",
+		"humao.rest-client",
+		"jasonnutter.search-node-modules",
+		"lokalise.i18n-ally",
+		"meganrogge.template-string-converter",
+		"mgmcdermott.vscode-language-babel",
+		"mrmlnc.vscode-attrs-sorter",
+		"mrmlnc.vscode-scss",
+		"msjsdiag.debugger-for-chrome",
+		"redhat.fabric8-analytics",
+		"ritwickdey.liveserver",
+		"wix.vscode-import-cost",
+		"xabikos.javascriptsnippets"
+	],
+	"devDependencies": {
+		"v8-compile-cache": "^2.2.0"
+	}
+}
