@@ -1,0 +1,46 @@
+{
+	"name": "lux-pack-theme",
+	"displayName": "Lux Theme Extension Pack",
+	"description": "An extension pack",
+	"version": "0.1.0",
+	"galleryBanner": {
+		"color": "#FFCF02",
+		"theme": "light"
+	},
+	"publisher": "clazex",
+	"license": "Apache-2.0",
+	"categories": [
+		"Extension Packs"
+	],
+	"preview": true,
+	"qna": false,
+	"private": true,
+	"scripts": {
+		"build": "npm run clean && npm run package",
+		"clean": "node scripts/clean",
+		"package": "node scripts/package",
+		"publish": "vsce publish"
+	},
+	"homepage": "https://github.com/Clazex/vsce-lux-pack/tree/main/packages/theme#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Clazex/vsce-lux-pack.git",
+		"directory": "packages/theme"
+	},
+	"bugs": {
+		"url": "https://github.com/Clazex/vsce-lux-pack/issues"
+	},
+	"engines": {
+		"node": "^12.9.0 || >=14",
+		"vscode": "^1.52.0"
+	},
+	"extensionPack": [
+		"danielgjackson.auto-dark-mode-windows",
+		"pkief.material-icon-theme",
+		"thenikso.github-plus-theme",
+		"zhuangtongfa.material-theme"
+	],
+	"devDependencies": {
+		"v8-compile-cache": "^2.2.0"
+	}
+}
