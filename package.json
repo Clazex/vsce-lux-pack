@@ -24,8 +24,8 @@
 	},
 	"devDependencies": {
 		"fs-extra": "^9.1.0",
-		"lerna": "^3.22.1",
+		"lerna": "^4.0.0",
 		"v8-compile-cache": "^2.2.0",
-		"vsce": "^1.84.0"
+		"vsce": "^1.88.0"
 	}
 }
